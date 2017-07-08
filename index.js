@@ -3,17 +3,24 @@ import './style';
 import { h } from 'preact';
 import { Router } from 'preact-router';
 
+import Layout from './components/Layout';
+
 import Header from './components/header';
-import Home from './routes/home';
-import Profile from './routes/profile';
+
+import Home from './screens/Home';
+import Series from './screens/Series';
+
 
 export default () => (
 	<div id="app">
 		<Header />
-		<Router>
-			<Home path="/" />
-			<Profile path="/profile/" user="me" />
-			<Profile path="/profile/:user" />
-		</Router>
+
+		<Layout>
+			<Router>
+				<Home path="/" />
+				<Series path="/series" />
+			</Router>
+		</Layout>
+
 	</div>
 );
