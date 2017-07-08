@@ -1,6 +1,6 @@
 {
   "name": "thefuckingninja",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,7 @@
   "dependencies": {
     "preact": "^8.1.0",
     "preact-compat": "^3.16.0",
-    "preact-router": "^2.5.4"
+    "preact-router": "^2.5.4",
+    "styled-components": "^2.1.1"
   }
 }
